@@ -14,6 +14,9 @@ const Nav = () => {
       <BreadcrumbItem>
         <BreadcrumbLink href="/secured">Для авторизованных</BreadcrumbLink>
       </BreadcrumbItem>
+      <BreadcrumbItem>
+        <BreadcrumbLink href="/admin">Для Admina </BreadcrumbLink>
+      </BreadcrumbItem>
 
       {!keycloak.authenticated && (
         <button type="button" onClick={() => keycloak.login()}>
